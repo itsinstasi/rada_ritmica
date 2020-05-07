@@ -2,7 +2,7 @@
 <html lang="ru" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
-    <title>Stories. </title>
+    <title>Stories. Rada Bolshiyanova</title>
     
     <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -35,7 +35,7 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="150"/>
     <meta property="og:image:height" content="150"/>
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="Rada Bolshiyanova" />
     <meta property="og:description" content="" />
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="rada_ritmica" />
@@ -61,7 +61,7 @@
 							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/43704396_511142369364942_7250605790145282048_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=TePd9p79KaoAX_13USJ&oh=fb09be02c037a0209f90d8f296b0f27b&oe=5ED9F560" alt="Rada Bolshiyanova" /></div>
 							<div class="header__logo-txt">rada_ritmica</div>
 						</div>
-						<div class="header__title"></div>
+						<div class="header__title">Rada Bolshiyanova</div>
 					</div>
 				</div>
 			</div>
@@ -603,6 +603,12 @@ $(document).ready(function() {
 				createStory(currentTitle);
 			}
 		}
+
+		$(".items-item").each(function() {
+			var checkbox = $(this).find("input");
+			checkbox.prop("checked", false);
+		});
+		cleanupItems();
 	});
 
 	$("#btn_delete").click(function(){
